@@ -1,0 +1,25 @@
+.signUp_form{
+    text-align: center;
+    border:thin solid green;
+    width:40vw;
+    margin-left:auto;
+    margin-right:auto;
+    display: block;
+    margin-top:20vh;
+}
+
+input{
+    margin-bottom:1rem;
+}
+
+.submit_button{
+    padding:0.5rem 1rem;
+    font-weight: bold;
+    background:lightgreen;
+}
+
+.warning{
+    font-size:2rem;
+}
+
+

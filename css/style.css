@@ -1,0 +1,277 @@
+main{
+    width:100%;
+    display:flex;
+    flex-wrap:wrap;
+}
+
+*, *:before, *:after {
+    box-sizing: border-box;
+}
+
+html{
+    font-family: "Times New Roman", Times, serif;
+    background-color: #F7F5F0;
+    line-height: 1.15;
+    scroll-behavior: smooth;
+}
+
+body{
+    width:100%;
+    margin:auto;
+    padding-top:1em;
+}
+
+
+/*Logo*/
+
+
+.bg-nav {
+    background-color: rgba(255, 255, 255, 1);
+    margin-top: -24px;
+}
+
+
+
+.brand img{
+ 
+  width: 10%;
+  height: auto;
+  margin-left: 6%;
+  }
+
+
+.navbar {
+  position: fixed;
+  width:100%;
+  top: 24px;
+  z-index: 2;
+  
+}
+
+.navbar ul{
+  display: block;
+  display:flex;
+  flex-wrap: wrap;
+  justify-content:flex-end;
+  overflow:hidden;  
+  list-style-type:none;
+  margin: auto;
+  padding:0;
+  width:auto;
+}
+
+.navbar ul li{
+  font-family: "Times New Roman", Times, serif;
+  padding:.5em 3.5em;
+  text-transform: uppercase;
+  flex: 0 1 auto;
+  letter-spacing: .11em;
+  font-size: 1.2rem;
+}
+
+.navbar>ul>li>a{
+    text-decoration: none;
+    background: linear-gradient(to bottom, #2193b0 0%, #6dd5ed 100%); 
+    -webkit-background-clip: text; 
+    -webkit-text-fill-color: transparent;
+    color: #a68676;
+
+}
+
+.navbar a:hover, .navbar a:focus, .navbar a:active {
+    background: linear-gradient(to bottom, #de6262 0%, #ffb88c 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color:#e5bf76;
+    text-decoration: none;
+ 
+}
+
+
+ @media (max-width: 510px) {
+.navbar ul{
+ 
+  justify-content:space-around;
+
+}
+
+.navbar ul li{
+
+    /*flex: 1 1 auto;*/
+    font-size: 0.6rem;
+  }
+
+
+
+  .brand img {
+    width: 0%
+    
+    /*text-align: center;*/
+  }
+
+  }
+
+
+
+/* contact */
+footer .copyright{
+  width:100%;
+  margin:auto;
+  padding:1em;
+  font-family: "Garamond", serif;
+  font-size:.88em;
+  text-align: center;
+}
+
+.logo {
+  width: 4em;
+  height: auto;
+}
+
+
+/*.text p{
+  font-size: 14px;
+  padding-top: 5em;
+
+}*/
+
+
+@media (max-width: 700px) {
+  
+  .imgContainer{
+    order: 1;
+    
+  }
+
+  footer div {
+     margin: 50px 50px 50px 50px;
+  }
+  
+}
+  
+
+.typesofwines{
+    flex:22%;
+    background:#fffdf7;
+    margin-top:2em;
+}
+
+.typesofwines ul{
+
+    display:block;  
+    list-style-type:none;
+    padding:5em 0;
+    text-align: center;
+    position: fixed;
+    width: 22%;
+    margin:0px auto;
+}
+
+.typesofwines ul li{
+    text-transform: uppercase;
+    letter-spacing: .1em;
+    font-size: 1.2 rem;
+    line-height: 4em;
+}
+
+.typesofwines>ul>li>a{
+    text-decoration: none;
+    background: linear-gradient(to bottom, #2193b0 0%, #6dd5ed 100%); 
+    -webkit-background-clip: text; 
+    -webkit-text-fill-color: transparent; 
+    color: #FFFFF0;
+    font-size: 1.2rem;
+}
+
+.typesofwines a:hover, .typesofwines a:focus, .typesofwines a:active {
+    background: linear-gradient(to bottom, #de6262 0%, #ffb88c 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color:#e5bf76;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+
+.rightContent{
+    flex: 78%;
+    margin-top: 2rem;
+}
+
+
+
+.signupfunction{
+    width: 85%;
+    margin: 2rem auto;
+}
+
+
+
+.slider{
+    width: 85%;
+    margin: 3rem auto;
+    margin-top: 0;
+}
+.slider img{
+    width: 100%;
+    padding-bottom: 3rem;
+    border-bottom: 2px solid black;
+}
+
+.recentgames{
+    width: 85%;
+    margin: 3rem auto;
+}
+
+.recentgames-Image{
+
+    margin-top: 2rem;
+}
+
+.recentgames-Image img:nth-child(2){
+    margin-left: 2rem;
+}
+.recentgames-Image img:last-child{
+    margin-left: 2rem;
+
+}
+
+input[type=text], select{
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+
+  
+
+
+
+  .submit_button{
+      margin:2rem auto;
+      padding: 12px 22px;
+      width: 100%;
+      font-size: 18px;
+      text-align: center;
+      cursor: pointer;
+      outline: none;
+      color: #FFF;
+      background-color: #4cAF50;
+      border: none;
+      border-radius: 15px;
+      box-shadow: 0 9px #999;
+  }
+
+  .submit_button:hover{
+      background-color:#3e8e41;
+
+  }
+
+  .submit_button:active{
+      background-color: #3e8e41;
+      box-shadow: 0 5px #666;
+      transform: translateY(4px);
+  }

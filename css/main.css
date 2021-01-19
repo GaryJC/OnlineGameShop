@@ -1,0 +1,356 @@
+/*
+  STYLE GUIDE STYLING 
+  Default styling for the style guide 
+*/
+*{
+  margin:0;
+  padding:0;
+}
+body, html {
+  height: 100%;
+  margin: 0;
+  font-family: sans-serif;
+
+}
+.bg{
+  background-image: url(img/bg.jpg);
+  height:100%;
+  width: auto;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+#all{
+  padding-top: 5%;
+}
+
+nav{
+
+  width:100%;
+  height:60px;
+  background-color:#fff;
+  opacity: 0.95;
+}
+.part1{
+  text-align: center;
+}
+
+.element {
+  padding-bottom: 2rem;
+  border-top-width: 0.15rem;
+  border-top-style: dotted;
+  border-top-color: lightblue;
+}
+
+h1{
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  text-align: center;
+}
+
+h2 {
+  padding-top: 1.5rem;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size:2rem;
+  font-style: oblique;
+}
+
+h3 {
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-style: italic;
+  margin-top: 1rem;
+}
+
+h4 {
+  margin-bottom: 0.25rem;
+}
+
+p {
+  margin-top: 0;
+}
+nav{
+  width:100%;
+}
+
+nav a:hover, nav a:focus {
+  text-decoration: none;
+}
+
+code {
+  background-color: #EEE;
+  padding: 0.5rem;
+  display: block;
+}
+
+
+/* 
+  INTERACTIVE ELEMENTS -------------------
+*/
+
+/* Styling for the navigation button */
+.button-nav {
+  border:1px solid red;
+  display: inline-block;
+  padding: 0.5rem;
+  color: white;
+  background-color: rgb(50,50,50);
+  text-decoration: none;
+  transition-property: background-color; 
+  transition-duration: 1s;
+}
+
+.button-nav:hover, .button-nav:focus {
+  color: black;
+  background-color: red;
+  border-style: groove;
+}
+button:hover, button:focus{
+  background-color: #D2F898;
+  border: none;
+  color:#2F2F2F;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+}
+
+
+
+/* 
+  TEXT ELEMENTS -------------------
+*/
+
+
+
+
+/* 
+  COMBINED ELEMENTS -------------------
+*/
+nav{
+  width:100%;
+  height:60px;
+  background-color:#fff;
+}
+
+nav p{
+  font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  color:#222;
+  font-size:50px;
+  line-height:55px;
+  float:left;
+  padding:0px 20px;
+}
+
+
+
+nav ul li{
+  float: left;
+  list-style: none;
+  position:relative;
+}
+
+nav ul li a{
+  font-size:14px;
+  display:block;
+  font-family:arial;
+  color:#222;
+  padding: 20px 14px;
+  text-decoration: none;
+}
+nav ul li ul{
+  display:none;
+  position:absolute;
+  background-color: #fff;
+  padding:10px; 
+  border-radius:0px 0px 4px 4px;
+}
+
+nav ul li:hover ul{
+  display:block;
+}
+
+nav ul li ul li{
+  width:180px;
+  border-radius:4px;
+}
+
+nav ul li a:hover{
+  background-color:#f3f3f3;
+}
+nav ul li ul li a:hover{
+  background-color:#f3f3f3;
+}
+
+.company{
+  margin-left: 5rem;
+  width:40rem;
+}
+.mid{
+  text-align: center;
+}
+.middle{
+  font-family: 'Times New Roman', Times, serif;
+  font-style: normal;
+  background:lightcyan;
+  font-size: 2rem;
+  padding:1rem;
+  margin-top: 3rem;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.game{
+  margin:2%;
+  margin-top:40px;
+  text-align: center;
+}
+.game img{
+  padding: 1.5rem;
+ 
+  
+}
+.game img:hover{
+  opacity: 0.95;
+  -moz-box-shadow: 0 0 40px #ccc;
+  -webkit-box-shadow: 0 0 40px #ccc;
+  box-shadow: 0 0 40px #ccc;
+}
+
+/*
+  button style tutorial from https://www.w3schools.com/css/tryit.asp?filename=trycss_buttons_basic.
+*/
+button{
+  background-color: #4CAF50;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  transition-property: background-color; 
+  transition-duration: 1s;
+}
+
+/*
+  Label and input styling tutoria from https://www.w3schools.com/css/tryit.asp?filename=trycss_forms.
+*/
+input[type=text], select {
+  width: 25%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+input[type=password], select {
+  width: 25%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+/*
+  When we hover above the input element, the opacity of the input box will change to 50%
+*/
+input:hover,input:focus{
+  opacity: 0.5;
+  
+}
+
+.distance{
+  margin-top:1rem;
+}
+
+.logo{
+  text-align: center;
+  padding-top: 30%;
+  padding-left:25%;
+}
+
+.styleme{
+  list-style-type: square;
+}
+
+.pad{
+  padding:2rem;
+
+}
+
+
+
+.img2{
+  width: 100%;
+  text-align: center;
+  padding-top: 1rem;
+}
+
+.watch{
+  font-family: 'Times New Roman', Times, serif;
+  background:lightblue;
+  font-style: normal;
+  font-size: 2rem;
+  text-align: center;
+  padding: 1rem;
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
+.placeholder{
+  width:40%;
+}
+#Contact_us{
+  margin-top:-2rem;
+}
+
+ul{
+  padding-left:2rem;
+}
+
+a{
+  text-decoration: lightblue;
+}
+
+#About_us{
+  margin-top:2rem;
+  display: flex;
+  flex-wrap: wrap;
+  width:90%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media only screen and (max-width:1400px){
+  #all{
+    padding-top:0%;
+    background:white;
+  }
+  .placeholder{
+    width:100%;
+    text-align: center;
+  }
+
+  .company{
+    width:100%;
+    margin-top:2rem;
+    margin-left:0;
+
+  }
+
+  .logo{  
+    padding-top:20%;
+    width:50%;
+  }
+
+}
+
+.top_right{
+  float:right;
+}
